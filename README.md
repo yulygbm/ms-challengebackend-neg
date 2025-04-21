@@ -131,7 +131,21 @@ $ docker-compose up --force-recreate
 
 #### Suma - OK
 
+![suma-ok](https://github.com/user-attachments/assets/2215b068-07fa-4429-a14b-ca77f42cfd33)
+
+![suma-ok-request](https://github.com/user-attachments/assets/24d8cb25-e618-4e67-92bc-f20face4916c)
+
+![suma-ok-response](https://github.com/user-attachments/assets/ec631a37-58ac-45e3-a79a-44aa84fa3567)
+
+
 #### Suma - NOK
+
+![suma-url-mala](https://github.com/user-attachments/assets/10ecb825-922d-42a4-aea9-98ac6e449a38)
+
+![suma-nok-numero1-letra-a](https://github.com/user-attachments/assets/96949693-a0cf-4140-b696-cd844d2239fc)
+
+![suma-nok-numero1-letra](https://github.com/user-attachments/assets/dc305568-cf51-4954-a2cb-83c9c79cee90)
+
 
 ### Consulta el historial de las peticiones realizadas por el cliente.
 #### Consulta todo el historial de peticiones - OK
@@ -139,6 +153,8 @@ $ docker-compose up --force-recreate
    verbo: GET
    url:  /calculo-dinamico/peticiones/historial
 ```
+![consulta-ok-todo-el-historial-peticiones](https://github.com/user-attachments/assets/5f8ef20b-bd6d-44f4-b142-9c7bdd5ff78a)
+
 
 #### Consulta el historial de peticiones por paginación - OK
 ```shell
@@ -146,8 +162,19 @@ $ docker-compose up --force-recreate
    url:  /calculo-dinamico/peticiones/historial?offset=0&limit=1
 ```
 
+![consulta-ok-todo-el-historial-peticiones-con-paginacion3](https://github.com/user-attachments/assets/b73cfffa-bfd6-430c-a139-c2d870a5676a)
+
+![consulta-ok-todo-el-historial-peticiones-con-paginacion2](https://github.com/user-attachments/assets/ec7721ba-1137-4738-adb7-702691856d3f)
+
+![consulta-ok-todo-el-historial-peticiones-con-paginacion1](https://github.com/user-attachments/assets/880f32ed-01dd-4edb-9b8a-410f5a43e055)
+
+
 #### Consulta historial de peticiones con offset incorrecto - NOK
 ```shell
    verbo: GET
    url:  /calculo-dinamico/peticiones/historial?offset=a&limit=1
 ```
+
+![consulta-nok-con-offset-no-numerico](https://github.com/user-attachments/assets/c0e25193-b75b-4c36-b5db-b10bd9dabc56)
+
+![consulta-nok-con-offset-letra](https://github.com/user-attachments/assets/a69ebbf1-f7f1-4e34-81b1-bd79b66c3278)
