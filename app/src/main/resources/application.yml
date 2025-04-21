@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: ms-challengebackend-util
+  jpa:
+    hibernate:
+      ddl-auto: update
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  flyway:
+    locations: classpath:/db/migration
+    schemas: calculos
+    baselineOnMigrate: true
+    enabled: true
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=calculos
+    username: postgres
+    password: postgres.2025
+  redis:
+    host: localhost
+    port: 6379
+    time-to-live: 30 #30 minutos
+  cache:
+    type: redis
+
+
+external:
+  api-porcentaje:
+    url: '/porcentaje-dinamico'
+    retry:
+      maxAttempts: 3
+      maxDelay: 2000
+
+logging:
+  level:
+    root: INFO
