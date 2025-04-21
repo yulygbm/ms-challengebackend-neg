@@ -140,10 +140,10 @@ $ docker-compose up --force-recreate
 
 #### Suma - NOK
 
-La url está incorrecta, le falta la letra a al final de suma
 ![suma-url-mala](https://github.com/user-attachments/assets/10ecb825-922d-42a4-aea9-98ac6e449a38)
 
-El parámetro de numero1 tiene la letra "a"
+
+
 ![suma-nok-numero1-letra-a](https://github.com/user-attachments/assets/96949693-a0cf-4140-b696-cd844d2239fc)
 
 ![suma-nok-numero1-letra](https://github.com/user-attachments/assets/dc305568-cf51-4954-a2cb-83c9c79cee90)
